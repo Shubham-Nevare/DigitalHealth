@@ -1,6 +1,21 @@
+"use client"
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 
 export default function Home() {
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    if (headingRef.current) {
+      gsap.fromTo(
+        headingRef.current,
+        { y: 50, opacity: 0 },
+        { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+      );
+    }
+  }, []);
+
   return (
     <main className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
@@ -16,7 +31,10 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-6 lg:gap-8">
             {/* Content */}
             <div className="lg:w-1/2 z-10 text-center lg:text-left">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
+              <h1
+                ref={headingRef}
+                className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug"
+              >
                 Get Expert <span className="text-blue-300">Medical</span> Second
                 Opinions
               </h1>

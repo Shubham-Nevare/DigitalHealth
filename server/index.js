@@ -5,15 +5,17 @@ const compression = require('compression');
 const rateLimit = require('express-rate-limit');
 const path = require('path');
 const dotenv = require('dotenv');
+dotenv.config({ path: '.env.local' });
+
 
 // Load environment variables from the root .env file
 dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 // Temporary fix: Set JWT_SECRET if not loaded from .env
-if (!process.env.JWT_SECRET) {
-    process.env.JWT_SECRET = 'a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef';
-    console.log('JWT_SECRET set manually');
-}
+// if (!process.env.JWT_SECRET) {
+//     process.env.JWT_SECRET = 'a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef';
+//     console.log('JWT_SECRET set manually');
+// }
 
 const connectDB = require('./config/database');
 
@@ -109,7 +111,7 @@ app.use('*', (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
