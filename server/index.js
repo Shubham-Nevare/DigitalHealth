@@ -32,7 +32,7 @@ connectDB();
 
 // CORS configuration - MUST come before other middleware
 app.use(cors({
-    origin: ['http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:3001'],
+    origin: ['https://digital-health-nine.vercel.app/', 'http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:3001'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token']
