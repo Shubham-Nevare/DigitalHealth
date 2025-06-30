@@ -118,6 +118,7 @@ app.use('*', (req, res) => {
 //     console.log(`CORS enabled for: http://localhost:3000`);
 // });
 
+
 // Handle unhandled promise rejections
 process.on('unhandledRejection', (err, promise) => {
     console.log(`Error: ${err.message}`);
