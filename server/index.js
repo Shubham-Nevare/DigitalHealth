@@ -32,7 +32,7 @@ connectDB();
 
 // CORS configuration - MUST come before other middleware
 app.use(cors({
-    origin: ['https://digital-health-nine.vercel.app/', 'http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:3001'],
+    origin: ['https://digital-health-nine.vercel.app', 'http://localhost:3000', 'http://127.0.0.1:3000', 'http://localhost:3001'],
     credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token']
@@ -111,10 +111,9 @@ app.use('*', (req, res) => {
 });
 
 // Start server
-const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${process.env.PORT}`);
     console.log(`JWT Secret: ${process.env.JWT_SECRET ? 'Set' : 'Not set'}`);
     console.log(`CORS enabled for: http://localhost:3000`);
 });
