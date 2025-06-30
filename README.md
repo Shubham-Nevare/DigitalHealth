@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+HEAD
 # Health Connect Doctor
 
 A comprehensive telemedicine platform connecting patients with healthcare professionals through video consultations, appointment booking, and medical record management.
@@ -151,16 +151,10 @@ A comprehensive telemedicine platform connecting patients with healthcare profes
 
 ## Sample Data
 
-The seed script creates:
-
-**Doctors:**
-- Dr. Sarah Johnson (Cardiology)
-- Dr. Michael Chen (Cardiology)
-- Dr. Emily Brown (Pediatrics)
-
-**Patients:**
-- Shubham (user@gmail.com / user123)
-- Jane Doe (jane@example.com / jane456)
+Demo Credentials:
+Patient: patient@gmail.com / user123
+Doctor: doctor@gmail.com / user123
+Admin: admin@admin.com / admin123
 
 ## Development Scripts
 
@@ -210,21 +204,4 @@ npm run lint
 3. Configure network access
 4. Update connection string
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-For support, email support@healthconnect.com or create an issue in the repository.
-=======
 # DigitalHealth
->>>>>>> c34e65fc595821ff14d197574def421e022369fb
