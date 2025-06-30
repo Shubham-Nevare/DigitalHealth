@@ -1,4 +1,4 @@
-o<<<<<<< HEAD
+HEAD
 # Health Connect Doctor
 
 A comprehensive telemedicine platform connecting patients with healthcare professionals through video consultations, appointment booking, and medical record management.
@@ -204,10 +204,4 @@ npm run lint
 3. Configure network access
 4. Update connection string
 
-
-## Support
-
-For support, email support@healthconnect.com or create an issue in the repository.
-=======
 # DigitalHealth
->>>>>>> c34e65fc595821ff14d197574def421e022369fb
