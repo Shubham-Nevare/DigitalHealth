@@ -64,7 +64,7 @@ A comprehensive telemedicine platform connecting patients with healthcare profes
    
    # Server Configuration
    PORT=5000
-   NODE_ENV=development
+   <!-- NODE_ENV=development -->
    
    # Email Configuration (optional)
    EMAIL_HOST=smtp.gmail.com
