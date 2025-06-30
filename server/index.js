@@ -115,7 +115,6 @@ const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-    // console.log(`Environment: ${process.env.NODE_ENV}`);
     console.log(`JWT Secret: ${process.env.JWT_SECRET ? 'Set' : 'Not set'}`);
     console.log(`CORS enabled for: http://localhost:3000`);
 });
