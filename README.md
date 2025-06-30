@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Health Connect Doctor
 
 A comprehensive telemedicine platform connecting patients with healthcare professionals through video consultations, appointment booking, and medical record management.
@@ -224,3 +225,6 @@ This project is licensed under the MIT License.
 ## Support
 
 For support, email support@healthconnect.com or create an issue in the repository.
+=======
+# DigitalHealth
+>>>>>>> c34e65fc595821ff14d197574def421e022369fb
