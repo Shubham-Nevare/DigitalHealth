@@ -4,7 +4,8 @@
     "private": true,
     "scripts": {
         "dev": "next dev",
-        "build": "rd /s /q .next && next build",
+        "build": "npm run clean && next build",
+        "clean": "rimraf .next",
         "start": "next start",
         "lint": "next lint",
         "server": "node server/index.js",
@@ -43,6 +44,7 @@
         "eslint": "^9",
         "eslint-config-next": "15.3.3",
         "nodemon": "^3.0.2",
+        "rimraf": "^6.0.1",
         "tailwindcss": "^4"
     }
 }
