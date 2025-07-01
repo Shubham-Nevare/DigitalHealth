@@ -27,6 +27,9 @@ const appointmentRoutes = require('./routes/appointments');
 // Initialize express
 const app = express();
 
+// Define Port
+const PORT = process.env.PORT || 5001;
+
 // Connect to database
 connectDB();
 
@@ -111,12 +114,11 @@ app.use('*', (req, res) => {
 });
 
 // Start server
-
-// app.listen(PORT, () => {
-//     console.log(`Server running on port ${process.env.PORT}`);
-//     console.log(`JWT Secret: ${process.env.JWT_SECRET ? 'Set' : 'Not set'}`);
-//     console.log(`CORS enabled for: http://localhost:3000`);
-// });
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+    console.log(`JWT Secret: ${process.env.JWT_SECRET ? 'Set' : 'Not set'}`);
+    console.log(`CORS enabled for: http://localhost:3000`);
+});
 
 
 // Handle unhandled promise rejections
